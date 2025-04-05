@@ -1,0 +1,21 @@
+form input, form textarea, form button {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+/* form input:focus, form textarea:focus {
+    outline: none;
+} */
+form button {
+    background-color: #383842;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+textarea{
+    resize: none;
+    max-height: 150px;
+}

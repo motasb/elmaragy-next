@@ -1,8 +1,6 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
 }
 
 @theme inline {
@@ -14,13 +12,67 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
   }
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  direction: rtl;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-image: url(/images/background.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.header-page {
+  background: linear-gradient(
+    171deg,
+    rgba(56, 56, 66, 1) 0%,
+    rgba(88, 86, 91, 1) 100%
+  );
+}
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after {
+  color: #383842;
+  opacity: 0.4;
+}
+.swiper-pagination-bullet-active {
+  background-color: #6a6a78 !important;
+}
+.section {
+  padding: 40px;
+  background-color: rgba(255, 255, 255, 0.712);
+  margin: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.6s ease;
+}
+.course-card {
+  background-color: #3498db;
+  color: white;
+  padding: 15px;
+  margin: 10px;
+  display: inline-block;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.course-card:hover {
+  transform: scale(1.2);
+}
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px); /* تبدأ الأيقونات من أسفل */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* تتحرك الأيقونات إلى مكانها الطبيعي */
+  }
+}
+
+.animate-slideIn {
+  animation: slideIn 0.5s ease-out forwards;
 }
