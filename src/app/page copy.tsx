@@ -3,7 +3,7 @@ import Faq from "@/components/Faq";
 import Features from "@/components/Features";
 import MySwiperComponent from "@/components/Swiper";
 import Testimonials from "@/app/_components/Testimonials";
-// import YouTubeGallery from "@/components/YouTubeGallery";
+import YouTubeGallery from "@/components/YouTubeGallery";
 
 const HomePage = () => {
   return (
@@ -13,7 +13,7 @@ const HomePage = () => {
       <Testimonials />
       <Courses />
       <Faq />
-      {/* <YouTubeGallery /> */}
+      <YouTubeGallery />
     </div>
   );
 };
